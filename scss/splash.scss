@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'maklight';
+    src: url('mak-webfont.woff2') format('woff2'),
+         url('mak-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'makbold';
+    src: url('mak-bold-webfont.woff2') format('woff2'),
+         url('mak-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.grid1 {
+    background: $peach;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .font {
+        font-size: 275px;
+        font-family: 'bodoni moda', sans-serif;
+        color: $red;
+        font-weight: 900;
+        margin-top: -50px;
+        text-transform: uppercase;
+    }
+    .imgHolder {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+        filter: grayscale(100%);
+        img {
+            width: 400px;
+            height: 500px;
+            position: absolute;
+        }
+        img:nth-child(6) {
+            display: none;
+        }
+        img:nth-child(5) {
+            display: none;
+        }
+        img:nth-child(4) {
+            display: none;
+        }
+        img:nth-child(3) {
+            display: none;
+        }
+        img:nth-child(2) {
+            display: none;
+        }
+        img:nth-child(1) {
+            display: none;
+        }
+    }
+}

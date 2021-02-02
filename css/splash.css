@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'maklight';
+  src: url("mak-webfont.woff2") format("woff2"), url("mak-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'makbold';
+  src: url("mak-bold-webfont.woff2") format("woff2"), url("mak-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+.grid1 {
+  background: red; }
+  .grid1 .font {
+    font-size: 150px;
+    font-family: 'makbold', sans-serif; }
