@@ -4,13 +4,14 @@ let number = 0;
 let timer = false;
 
 window.addEventListener('mousemove', (e) => {
-    if (e.clientX % 13 === 0 | e.clientY % 10 === 0) {
+    if (timer === false) {
         if (number === 5) {
             number = 1;
         } else {
             number++
         }
         changeImage(number)
+        timer = true;
     }
 })
 
@@ -22,4 +23,7 @@ const changeImage = (number) => {
     })
     img.style.display = "block";
     img.style.zIndex = 100;
+    setTimeout(() => {
+        timer = false
+    }, 300)
 }
