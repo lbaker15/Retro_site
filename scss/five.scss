@@ -1,0 +1,84 @@
+@import '_variables.scss';
+
+.grid5 {
+    .container {
+        width: 1500px;
+        height: 100%;
+        background: $peach;
+        z-index: -2;
+        display: flex;
+        gap: 30px;
+    } 
+    h4 {
+        font-family: 'maklight';
+        text-align: center;
+        font-weight: 600;
+        font-size: 50px;
+        margin-bottom: 40px;
+    }
+    .one {
+        width: 350px;
+        height: 470px;
+        border: 1px solid black;
+        text-align: center;
+    }
+    .two {
+        width: 350px;
+        height: 470px;
+        border: 1px solid black;
+        text-align: center;
+    }
+    .three {
+        width: 350px;
+        height: 470px;
+        border: 1px solid black;
+        text-align: center;
+    }
+    .four {
+        width: 350px;
+        height: 470px;
+        border: 1px solid black;
+        text-align: center;
+    }
+    .splitText {
+        display: flex;
+        justify-content: center;
+        font-family: poppins, sans-serif;
+        text-transform: uppercase;
+        margin-top: 20px;
+        h1 {
+            font-size: 40px;
+            margin-right: 10px;
+            font-weight: 800;
+        }
+        h2 {
+            font-size: 40px;
+        }
+    }
+    .text {
+        font-family: poppins, sans-serif;
+        margin-top: -5px;
+        padding: 30px;
+    }
+    .image {
+        .blur {
+            width: 150px; height: 100px; filter: blur(20px); 
+            border-radius: 50%; opacity: 0.65; margin-left: 50px; z-index: 1;
+            margin-top: 15px; position: relative;
+        }
+        img {
+            border-radius: 50%; width: 150px; height: 150px;
+            margin: 0 auto; z-index: 20; margin-top: -90px; position: relative;
+        }
+    }
+
+}
+.blue {
+    background: $blue;
+}
+.yellow {
+    background: $yellow;
+}
+.red {
+    background: $red;
+}
