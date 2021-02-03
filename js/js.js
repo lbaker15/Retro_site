@@ -55,6 +55,7 @@ circleText.addEventListener('click', () => {
         }})
         tlSplash.to('body', {overflowY: 'hidden', duration: 0.001})
         tlSplash.to(window, {scrollTo: 0, duration: 0.1})
+        
         tlSplash.fromTo('.gsapEl', {scaleY: 0}, {scaleY: 1, display: "block", duration: 0.7})
         tlSplash.to('.gsapEl', {marginTop: 240 + "vh", duration: 0.001})
         tlSplash.to(window, {scrollTo: {y: '.grid2', autoKill: false}, duration: 0.001 }, '-=0.001')
