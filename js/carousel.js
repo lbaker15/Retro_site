@@ -13,6 +13,7 @@ let slideSize = slide.clientWidth + 62.5 //40 is the gap
 let windowWidth = window.innerWidth;
 
 next.addEventListener('click', () => {
+    console.log('click')
     if (count < 3 && windowWidth > 1150) {
         count += 1
         sliderItems.style.left = - count * slideSize +'px';
@@ -26,6 +27,7 @@ next.addEventListener('click', () => {
 })
 
 prev.addEventListener('click', () => {
+    console.log('here')
     if (count > 0) {
     count -= 1
     sliderItems.style.left = - count * slideSize +'px';

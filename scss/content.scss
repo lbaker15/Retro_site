@@ -7,6 +7,7 @@
     grid-template-rows: 98vh 20vh 100vh 85vh 100vh 100vh 80vh;
     overflow: hidden;
     margin-left: 0.5vw;
+    z-index: -1;
 }
 body {
     overflow-x: hidden;
@@ -98,7 +99,7 @@ body {
     grid-column: 1 / span 4;
     grid-row: 6 / span 1;
     width: 98vw;
-    z-index: -3;
+    z-index: 0;
     background: $peach;
 }
 
@@ -123,18 +124,27 @@ body {
     z-index: -3;
     background: $peach;
     .flex {
-        display: flex; flex-direction: row;
+        display: flex; flex-direction: row; justify-content: center;
+        width: 100vw;
+        height: 100%;
         .flex1 {
-            width: 40%;
-            div {
-                font-family: 'maklight'; font-size: 20px; padding-left: 50px;
+            width: 100%;
+            align-items: center; display: flex;
+            gap: 15px; flex-direction: column;
+            justify-content: center; height: 100%;
+            span {
+                font-family: 'maklight'; font-size: 35px; 
+                margin-top: 15px;
             }
-        }
-        .flex2 {
-            width: 30%;
-        }
-        .flex3 {
-            width: 30%;
+            .circleHolder {
+                display: flex; flex-direction: row;
+                width: 300px;
+                justify-content: space-around;
+                .circle {
+                    width: 80px; height: 80px;
+                    border-radius: 50%; background: white;
+                }
+            }
         }
     }
 }

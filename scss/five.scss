@@ -2,9 +2,7 @@
 
 .grid5 {
     .container {
-        background: $peach;
-        z-index: -2;
-    } 
+        background: $peach;    } 
     #slider {
         width: 1220px;
         height: 500px;
@@ -76,9 +74,26 @@
     }
 }
 .btnHold {
-    margin-top: -50px;
-    margin-left: 40vw;
-    margin-bottom: 50vh;
+    width: 101vw;
+    margin-left: -20px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 900;
+    margin-top: -300px;
+    #prev {
+        z-index: 9000000; user-select: none;
+        border: none; outline: none;
+        background: transparent; font-size: 60px;
+        font-family: poppins, sans-serif;
+        width: 100px; height: 100px;
+    }
+    #next {
+        z-index: 9000000; user-select: none;
+        border: none; outline: none;
+        background: transparent; font-size: 60px;
+        font-family: poppins, sans-serif;
+        width: 100px; height: 100px;
+    }
 }
 .blue {
     background: $blue;
