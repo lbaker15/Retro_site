@@ -108,7 +108,20 @@ body {
     width: 98vw;
     z-index: -3;
     background: $peach;
+    .flex {
+        display: flex; flex-direction: row;
+        .flex1 {
+            width: 40%;
+        }
+        .flex2 {
+            width: 30%;
+        }
+        .flex3 {
+            width: 30%;
+        }
+    }
 }
+
 
 @media (max-width: 936px) {
     .grid {
