@@ -6,8 +6,8 @@
   display: grid;
   width: 99vw;
   grid-template-columns: repeat(4, 24vw);
-  grid-template-rows: 100vh 20vh 100vh 85vh 100vh 100vh;
-  overflow-x: hidden;
+  grid-template-rows: 98vh 20vh 100vh 85vh 100vh 100vh;
+  overflow: hidden;
   margin-left: 0.5vw; }
 
 body {
@@ -17,7 +17,9 @@ body {
   grid-column: 1 / span 4;
   grid-row: 1 / span 1;
   background: #ffd9d9;
-  width: 98vw; }
+  width: 98vw;
+  height: 100vh;
+  overflow: hidden; }
 
 .grid1Divider {
   grid-column: 1 / span 4;
@@ -138,3 +140,27 @@ body {
   .right4 {
     grid-row: 2 / span 1;
     grid-column: 1 / span 4; } }
+
+@media (max-width: 1150px) {
+  .grid5 .center {
+    display: flex;
+    justify-content: center;
+    width: 100vw; }
+  .grid5 #slider {
+    width: 820px;
+    overflow: hidden;
+    margin-left: -80px;
+    z-index: -1; } }
+
+@media (max-width: 770px) {
+  .grid5 .center {
+    display: flex;
+    justify-content: center;
+    width: 100vw; }
+  .grid5 #slider {
+    width: 400px;
+    overflow: hidden;
+    margin-left: -70px;
+    z-index: -1; }
+  .grid5 .slide:nth-child(1) {
+    margin-left: 30px; } }

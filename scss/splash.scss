@@ -35,6 +35,8 @@
         justify-content: center;
         align-items: center;
         margin-top:-50px;
+        height: 500px;
+        overflow: hidden;
         filter: grayscale(100%);
         img {
             width: 400px;

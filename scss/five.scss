@@ -2,13 +2,25 @@
 
 .grid5 {
     .container {
-        width: 1500px;
-        height: 100%;
         background: $peach;
         z-index: -2;
-        display: flex;
-        gap: 30px;
     } 
+    #slider {
+        width: 1220px;
+        height: 500px;
+        overflow: hidden;
+        margin-left: calc((98vw - 1220px) / 2.5);
+    }
+    #items {
+        width: 10000px;
+        position: relative;
+        top: 0;
+        left: 0px;
+        transition: all .3s ease-out;
+      }
+    #items.shifting {
+        transition: left .2s ease-out;
+    }
     h4 {
         font-family: 'maklight';
         text-align: center;
@@ -16,29 +28,20 @@
         font-size: 50px;
         margin-bottom: 40px;
     }
-    .one {
+    .slide {
+        transition: all 1s;
+        position: relative;
+        background: white;
+        float: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         width: 350px;
         height: 470px;
         border: 1px solid black;
         text-align: center;
-    }
-    .two {
-        width: 350px;
-        height: 470px;
-        border: 1px solid black;
-        text-align: center;
-    }
-    .three {
-        width: 350px;
-        height: 470px;
-        border: 1px solid black;
-        text-align: center;
-    }
-    .four {
-        width: 350px;
-        height: 470px;
-        border: 1px solid black;
-        text-align: center;
+        margin-left: 50px;
+
     }
     .splitText {
         display: flex;
@@ -71,10 +74,17 @@
             margin: 0 auto; z-index: 20; margin-top: -90px; position: relative;
         }
     }
-
+}
+.btnHold {
+    margin-top: -50px;
+    margin-left: 40vw;
+    margin-bottom: 50vh;
 }
 .blue {
     background: $blue;
+}
+.turquoise {
+    background: $turquoise;
 }
 .yellow {
     background: $yellow;
@@ -82,3 +92,7 @@
 .red {
     background: $red;
 }
+.pink {
+    background: $pinkpurple;
+}
+
