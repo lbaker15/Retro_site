@@ -102,6 +102,20 @@ body {
     background: $peach;
 }
 
+@font-face {
+    font-family: 'maklight';
+    src: url('mak-webfont.woff2') format('woff2'),
+         url('mak-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'makbold';
+    src: url('mak-bold-webfont.woff2') format('woff2'),
+         url('mak-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 .grid6 {
     grid-column: 1 / span 4;
     grid-row: 7 / span 1;
@@ -112,6 +126,9 @@ body {
         display: flex; flex-direction: row;
         .flex1 {
             width: 40%;
+            div {
+                font-family: 'maklight'; font-size: 20px; padding-left: 50px;
+            }
         }
         .flex2 {
             width: 30%;
